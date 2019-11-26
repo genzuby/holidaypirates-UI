@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "1",
+    "airlineCode": "korean-air",
+    "logoImg": "",
+    "aeroType": "airbus 770",
+    "departure": {
+      "airportId": "uk-heathrow-1",
+      "geoLocation": {
+        "lat": "12",
+        "long": "123"
+      },
+      "date": "2019/11/31",
+      "hour": "13:30",
+      "timezone": "UTC"
+    },
+    "arrival": {
+      "airportId": "ko-inchone-1",
+      "geolocation": {
+        "lat": "12",
+        "long": "123"
+      },
+      "date": "2019/12/01",
+      "hour": "04:30",
+      "timezone": "UTC"
+    },
+    "fromprice": [
+      {
+        "type": "economy",
+        "price": 1200,
+        "currency": "US"
+      },
+      {
+        "type": "business",
+        "price": 2500,
+        "currency": "US"
+      }
+    ]
+  }
+]

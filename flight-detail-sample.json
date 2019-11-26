@@ -1,0 +1,36 @@
+{
+  "_id": "1",
+  "type": "economy",
+  "legsrooms": 80,
+  "meal": {
+    "times": 3,
+    "available": ["kids", "vegetarian"],
+    "beverage": ["bear", "wine", "sodas", "water"]
+  },
+  "funs": {
+    "personalScreen": true,
+    "magazine": true,
+    "shopping": true
+  },
+  "arrivalAirportImg": "",
+  "price": [
+    {
+      "agencyId": "1",
+      "agencyName": "ag1",
+      "price": 1200,
+      "currency": "US"
+    },
+    {
+      "agencyId": "2",
+      "agencyName": "ag2",
+      "price": 1300,
+      "currency": "US"
+    },
+    {
+      "agencyId": "3",
+      "agencyName": "ag3",
+      "price": 1700,
+      "currency": "US"
+    }
+  ]
+}
