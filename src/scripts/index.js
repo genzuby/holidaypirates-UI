@@ -22,10 +22,10 @@ function loadInitPage() {
   document.querySelector("#header").innerHTML = header;
 }
 // get Hotels from API
-const getHotels = () =>
+export const getHotels = () =>
   new Promise((resolve, reject) => resolve(axios.get(HOTELS_API)));
 
-const getCurrnentPrice = price => {
+export const getCurrnentPrice = price => {
   // find current Month price
   const date = new Date();
   const curMonth = date.getMonth();
@@ -40,17 +40,13 @@ function renderTotalCnt(cnt) {
   ).innerHTML = `<p class="card-count">We found ${cnt} hotels for you!</p>`;
 }
 
-function detailRating() {
-  alert("aaaaa");
-}
-
-const renderStar = rate => {
+export const renderStar = rate => {
   // render rating info with star icons.
   const starcount = Math.floor(rate);
   const ishalf = Math.round(rate) > Math.floor(rate) ? true : false;
   const emptystar = 5 - Math.round(rate);
 
-  let starHtml = `<div class="star-rating" onclick="detailRating();">`;
+  let starHtml = `<div class="star-rating">`;
 
   if (starcount > 0) {
     for (let i = 0; i < starcount; i++) {
@@ -71,7 +67,7 @@ const renderStar = rate => {
   return starHtml;
 };
 
-const renderCards = info => {
+export const renderCards = info => {
   const space = "&nbsp";
 
   //make cards

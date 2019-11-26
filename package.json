@@ -5,7 +5,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
-    "test": "jest \"src/test/.*\\.spec\\.js\""
+    "test": "jest \"src/test/.*\\.spec\\.js\"",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,10 @@
     "url": "https://github.com/holidaypirates/frontend-assessment-test/issues"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-env": "^7.7.4",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
